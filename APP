@@ -1,0 +1,21 @@
+class A{
+	
+	public void display(){
+		System.out.println("Display method of class A");
+	}
+
+}
+class B extends A{
+	public void display(){
+		super.display();
+		System.out.println("Display method of class B");
+	}
+}
+class Main{
+	public static void main(String args[]){
+		A a=new A();
+		a.display();
+		B b=new B();
+		b.display();
+	}
+}
